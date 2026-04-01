@@ -1,0 +1,64 @@
+/** в этом css коде указана стилизация для блока "ОНО ТЕБЕ НАДО" **/
+
+.overlay{
+  min-height: 757px;
+  background:    
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Темный слой */
+  url(../images/cover.jpg);
+  background-repeat: no-repeat; /* Не повторять */
+  background-position: center; /* Центрировать */   
+  background-size: cover; /* Растянуть пропорционально */
+}
+
+.cover__title{
+  display: grid;
+  justify-self: center;
+  width: 100%;
+  height: auto;
+  padding: 165px 50px 70px 50px;
+  color: var(--color-light);
+  font-family:Raleway-Bold;
+  font-weight: 700;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+}
+
+.aligned-text_left{
+  text-align: left;
+}
+.aligned-text_center{
+  text-align: center;
+}
+.aligned-text_right{
+  text-align: right;
+}
+.cover__description{
+  display: flex;
+  align-items: center;
+  gap: 107px;
+  padding: 0 50px 0px 50px;
+
+}
+.cover__description-text{
+  color: var(--color-light);
+  font-family: Raleway-Regular;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+  text-transform: uppercase;
+  word-spacing: 11px;
+}
+
+.cover__bet-button{
+  width: 256px;
+  height: 51px;
+  margin-left: auto;
+  border: 1px var(--color-light) solid;
+  color: var(--color-light);
+  font-family: Raleway-Medium;
+  font-weight: 500;
+  font-size: 22px;
+  font-style: normal;
+  background-color:transparent ;
+}

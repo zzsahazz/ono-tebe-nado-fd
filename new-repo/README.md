@@ -1,0 +1,1 @@
+https://github.com/zzsahazz/ono-tebe-nado-fd/tree/main/.github/workflows

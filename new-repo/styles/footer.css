@@ -1,0 +1,55 @@
+/** /** в этом css коде указана стилизация для блока Footer **/
+
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr  min-content 1fr;
+  height: 180px;
+  margin: 0px 50px 0px 50px;
+}
+
+.footer__contacts{
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  gap: 1px;
+  max-width: 264.57px;
+  height: 104px ;
+  text-align: left;
+
+}
+
+.footer__social-list-item,
+.footer__menu-link,
+#no-underline {
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.footer__common-link{
+  color: var(--color-dark);
+  font-family: Raleway-Medium;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness: 1px; 
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
+}
+
+.footer__menu{
+  width: 163.9px;
+  height: 80px;
+  text-align: center;
+}
+
+.footer__social-list{
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  width: 240px;
+  height: 48px;
+}
+
