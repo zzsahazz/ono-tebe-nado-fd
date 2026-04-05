@@ -1,33 +1,29 @@
-/** /** в этом css коде указана стилизация для блока "Об аукционе" **/
 .about{
   display: flex;
   flex-direction: column;
-  place-items: center;
+  align-items: center;
   width: 100%;
-  height: auto;
   margin-bottom: 180px;
 }
 
-.about_info{
+.about__info{
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 25px;
   width: 100%;
-  height: 670px; 
 }
 
 .about__logo{
   display: flex;                
-  justify-content: space-around;             
+  justify-content: center;             
   align-items: center;
   width: 250px;        
   height: 250px;
-  margin: 35px 0 auto 47px;
+  margin: 24px 0 0 67px;
   border-radius: 50%;
   background-color: var(--color-dark);
 }
 .about__logo-image{
-  display: flex;
   width:148px;
   height: 114px;
 } 
@@ -36,34 +32,27 @@
   display: flex;
   flex-direction: column;
   grid-column: 2; 
-  width: 693px;
-  height: auto;
-  margin-top: auto; 
+  width: 687px;
   text-align: left;
+  margin-top: 124px;
 }
-
-.about__description{
-  width: 693px;
-  height: auto;
-}
-
 
 .about__title{
-  margin-bottom: 100px;
+  margin-bottom: 90px;
   color: var(--color-dark);
   font-family:Raleway-Bold;
   font-weight: 700;
   font-size: 40px;
-  font-style: normal;
+  text-transform: uppercase;
 }
 
 .about__text{
-  display: grid;
   color: var(--color-dark);
   font-family: Raleway-Regular;
   font-weight: 400;
   font-size: 20px;
-  font-style: normal;
+  line-height: 24px;
+
 }
 
 .about__text:first-of-type {

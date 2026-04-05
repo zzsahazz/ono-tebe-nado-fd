@@ -1,54 +1,68 @@
-/** /** в этом css коде указана стилизация для блока "ЛОТ"  **/
 .lots{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
-  margin: 180px 0px 120px 0px;
+  margin: 180px 24px 120px 24px;
+
 }
 
-.lots__info{ 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  width: 100%;
+.overlay-lens{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position: absolute;     
+  width: 100%;     
+  height: 100%;     
 }
 
 .lots__heading{
-  grid-column: 1 / -1;
-  width: 121px;
-  margin-left: 40px;
   font-family:Raleway-Bold;
   font-weight: 700; 
   font-size: 40px;
-  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  margin-left: 40px;
+}
+
+.cards-list{
+  display: flex;
+  gap: 25px;
+}
+
+.card-item{
+  width: 334px;
+  height: 596px;
+}
+
+.card-link{
+  display: block;
+  height: 100%;
+  text-decoration: none;
 }
 
 .card{
-  justify-self: center;
-  align-self: center;
-  width: 334px;
+  display: flex;
   height: 596px;
-
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 
 .card_type_film{
-  background:
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Темный слой */
+  background-image:
   url(../images/card-lot-01.jpg);
-
 }
 .card_type_book{
-  background: 
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Темный слой */
+  background-image: 
   url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture{
-  background: 
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Темный слой */
+  background-image: 
   url(../images/card-lot-03.jpg);
+
 }
 
 .card__info{
@@ -56,22 +70,19 @@
   flex-direction: column;
   justify-content: space-between;
   width: 254px; 
-  height: 500px;
   margin: 48px 40px 48px 40px; 
-
+  position: relative;
+  z-index: 10;
 }
 
 .card__title{
   color: var(--color-light);
   font-family:Raleway-Bold;
   font-weight: 700;
-  font-size: 22px;
-  font-style: normal;
-  line-height: 120%;
+  font-size: 26px;
+  line-height: 25px;
   text-decoration: underline;
-  text-decoration-thickness: 1px; /* толщина линии */
-  text-underline-offset: 3px;   /* отступ от текста */
-  text-transform: uppercase;
+  letter-spacing: 0px;
 }
 
 .card__text{
@@ -79,16 +90,123 @@
   font-family: Raleway-Regular;
   font-weight: 400;
   font-size: 20px;
-  font-style: normal;
   line-height: 120%;
 }
 
 .lots__look-more-link{
-  margin-left: 40px;
   color: var(--color-dark);
   font-family: Raleway-Regular;
   font-weight: 400;
-  
+  margin-left:40px;
+  margin-top:30px;
+  font-size: 20px;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness: 1px; /* толщина линии */
+  text-underline-offset: 3px;   /* отступ от текста */
+}
+/** /** в этом css коде указана стилизация для блока "ЛОТ"  **/
+.lots{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 180px 24px 120px 24px;
+
+}
+
+.overlay-lens{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position: absolute;     
+  width: 100%;     
+  height: 100%;     
+}
+
+.lots__heading{
+  font-family:Raleway-Bold;
+  font-weight: 700; 
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  margin-left: 40px;
+}
+
+.cards-list{
+  display: flex;
+  gap: 25px;
+}
+
+.card-item{
+  width: 334px;
+  height: 596px;
+}
+
+.card-link{
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card{
+  display: flex;
+  height: 596px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.card_type_film{
+  background-image:
+  url(../images/card-lot-01.jpg);
+}
+.card_type_book{
+  background-image: 
+  url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture{
+  background-image: 
+  url(../images/card-lot-03.jpg);
+
+}
+
+.card__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 254px; 
+  margin: 48px 40px 48px 40px; 
+  position: relative;
+  z-index: 10;
+}
+
+.card__title{
+  color: var(--color-light);
+  font-family:Raleway-Bold;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 25px;
+  text-decoration: underline;
+  letter-spacing: 0px;
+}
+
+.card__text{
+  color: var(--color-light);
+  font-family: Raleway-Regular;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lots__look-more-link{
+  color: var(--color-dark);
+  font-family: Raleway-Regular;
+  font-weight: 400;
+  margin-left:40px;
+  margin-top:30px;
   font-size: 20px;
   font-style: normal;
   text-decoration: underline;

@@ -1,19 +1,13 @@
-
-/** в этом css коде указана стилизация для шапки сайта**/
-
 .header{
   display: grid;
   grid-template-columns: 1fr  min-content 1fr;
   align-items: center;
-  width: 100%;
-  height: 293px;
-  padding:0px 50px;
+  padding:92px 50px 96px 50px;
 }
 
 
 .header__menu{
-  width: 391.48px;
-  height: 22px;
+  justify-self: start;
 }
 
 .header__links-list{
@@ -22,17 +16,12 @@
   list-style-type: circle;
 }
 
-.header__menu-link,
-.contacts__link{
+.contacts__link,
+.header__menu-link{
   color: var(--color-dark);
-  font-family: Raleway-Medium;
-  font-weight: 500;
+  font-family: Raleway-Regular;
+  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 3px;   
 }
 
 .header__menu-link_active,
@@ -54,15 +43,12 @@
   height: 104.65px;
 }
 
-.header__contacts{
-  display: flex;
-  flex-direction: column;
+.contacts_place_header{
   justify-self: end;
   align-self: center;
-  max-width: 240px;
-  height: 105px;
-  text-align: left;
+  width: 240px;
 }
+
 
 .contacts__address{
   color: var(--color-dark);

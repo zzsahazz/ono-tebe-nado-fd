@@ -122,8 +122,6 @@ html {
 }
 
 body {
-  display: grid;
-  justify-content: center;
   /**
     Пригодится в большинстве ситуаций
     (когда, например, нужно будет "прижать" футер к низу сайта)
@@ -135,7 +133,6 @@ body {
     Унифицированный интерлиньяж
    */
   line-height: 1.5;
-  text-align: center;
 }
 
 /**
@@ -198,6 +195,16 @@ svg * {
   border-color: currentColor;
   border-collapse: collapse;
 }
+
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+  max-width: 264.57px;
+  height: 104px;
+}
+
+
 
 /**
   Удаляем все анимации и переходы для людей,

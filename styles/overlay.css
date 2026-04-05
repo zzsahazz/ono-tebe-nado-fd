@@ -1,64 +1,81 @@
-/** в этом css коде указана стилизация для блока "ОНО ТЕБЕ НАДО" **/
-
 .overlay{
   min-height: 757px;
-  background:    
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Темный слой */
-  url(../images/cover.jpg);
+  background:url(../images/cover.jpg);
   background-repeat: no-repeat; /* Не повторять */
   background-position: center; /* Центрировать */   
   background-size: cover; /* Растянуть пропорционально */
+  position: relative;
+}
+
+.overlay-lens{
+  position: absolute;     
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 
 .cover__title{
-  display: grid;
-  justify-self: center;
   width: 100%;
-  height: auto;
-  padding: 165px 50px 70px 50px;
+  padding: 165px 50px 106px;
   color: var(--color-light);
   font-family:Raleway-Bold;
   font-weight: 700;
   font-size: 100px;
   font-style: normal;
-  text-align: center;
+  letter-spacing: 30px;
+  line-height: 115px;
+  z-index: 10;
+  position: relative;
+  gap: 20px; /*  */
+  display: grid;/*  */
+}
+
+.aligned-text{
+  display:block;
+  width:100%;
 }
 
 .aligned-text_left{
   text-align: left;
 }
+
 .aligned-text_center{
   text-align: center;
+  margin-left: 15px;
 }
+
 .aligned-text_right{
   text-align: right;
+  margin-left: 29px;
+
 }
+
 .cover__description{
   display: flex;
   align-items: center;
-  gap: 107px;
-  padding: 0 50px 0px 50px;
-
+  padding: 0 50px;
+  z-index: 10;
+  position: relative;
 }
+
 .cover__description-text{
   color: var(--color-light);
   font-family: Raleway-Regular;
   font-weight: 400;
   font-size: 22px;
-  font-style: normal;
   text-transform: uppercase;
-  word-spacing: 11px;
+  word-spacing: 18.4px;
+  line-height: 28px;
 }
 
-.cover__bet-button{
+.text-transform{
   width: 256px;
   height: 51px;
   margin-left: auto;
-  border: 1px var(--color-light) solid;
+  border: 1px solid var(--color-light);
   color: var(--color-light);
   font-family: Raleway-Medium;
   font-weight: 500;
   font-size: 22px;
-  font-style: normal;
   background-color:transparent ;
+  cursor: pointer;
+  text-transform: uppercase;
 }
