@@ -1,7 +1,7 @@
 .footer{
   display: grid;
   grid-template-columns: 1fr  min-content 1fr;
-  margin: 0px 50px 0px 50px;
+  margin: 0 50px 82px;
 }
 
 .contacts_place_footer{
@@ -9,29 +9,22 @@
   align-self: start;
 }
 
-.footer__social-list-item,
-.footer__menu-link,
-#no-underline {
+.footer__menu-item_active{
   text-decoration: none;
-  list-style-type: none;
-
 }
 
 .footer__common-link{
   color: var(--color-dark);
-  font-family: Raleway-Medium;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  text-decoration: underline;
-  text-decoration-thickness: 1px; 
-  text-decoration-skip-ink: none;
-  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 .footer__menu{
   width: 163.9px;
   text-align: center;
+  line-height: 22px;
 }
 
 .footer__social-list{
@@ -39,4 +32,11 @@
   justify-self: end;
   gap: 48px;
   width: 240px; 
+}
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+  max-width: 264.57px;
+  line-height: 25px;
 }

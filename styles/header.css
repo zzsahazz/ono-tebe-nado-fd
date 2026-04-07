@@ -12,16 +12,26 @@
 
 .header__links-list{
   display: flex;
-  gap: 32px;
+  gap: 33px;
   list-style-type: circle;
 }
 
-.contacts__link,
 .header__menu-link{
   color: var(--color-dark);
-  font-family: Raleway-Regular;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  text-decoration: underline; /* Обязательно */
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.contacts__link{
+  color: var(--color-dark);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-underline-offset: 4px;
 }
 
 .header__menu-link_active,
@@ -38,25 +48,20 @@
   height: 105px;
 }
 
-.header__logo-image{
-  width: 129.11px;
-  height: 104.65px;
-}
 
 .contacts_place_header{
   justify-self: end;
   align-self: center;
-  width: 240px;
+  width: 239px;
 }
 
 
 .contacts__address{
   color: var(--color-dark);
-  font-family: Raleway-Medium;
-  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  line-height: 24.3px;
+  line-height: 24px;
 }
 
 .cover{

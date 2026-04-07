@@ -2,10 +2,13 @@
   Нормализация блочной модели
  */
 *,
+
 ::before,
 ::after {
   box-sizing: border-box;
 }
+
+
 
 /**
   Убираем внутренние отступы слева тегам списков,
@@ -197,12 +200,7 @@ svg * {
 }
 
 
-.contacts{
-  display: flex;
-  flex-direction: column;
-  max-width: 264.57px;
-  height: 104px;
-}
+
 
 
 
