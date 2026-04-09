@@ -18,6 +18,7 @@
   line-height: 115px;
   position: relative; 
   text-transform: uppercase;
+
 }
 
 .aligned-text{
@@ -69,10 +70,10 @@
   background-color:transparent ;
   cursor: pointer;
   text-transform: uppercase;
+}
 
-  &:hover{
+.text-transform:hover{
   background-color: var(--color-light);
   color: var(--color-dark);
   transition: 0.3s;
-  }
 }

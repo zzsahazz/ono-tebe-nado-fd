@@ -32,7 +32,7 @@
 .about__content{
   display: flex;
   flex-direction: column;
-  grid-column: 2; 
+
   max-width: 693px;
   text-align: left;
   margin-top: 128px;
