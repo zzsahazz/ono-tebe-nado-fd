@@ -24,6 +24,7 @@
   border-radius: 50%;
   background-color: var(--color-dark);
 }
+
 .about__logo-image{
   width:148px;
   height: 114px;
@@ -32,7 +33,6 @@
 .about__content{
   display: flex;
   flex-direction: column;
-
   max-width: 693px;
   text-align: left;
   margin-top: 128px;
