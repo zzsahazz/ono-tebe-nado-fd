@@ -9,6 +9,10 @@
   align-self: start;
 }
 
+.footer__menu-list-item_active{
+  list-style-type: none;
+}
+
 .footer__common-link_active{
   text-decoration: none;
 }
