@@ -27,7 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  padding: 0 24px 0px 24px;
+  padding: 0 24px;
 }
 
 .card-item{
@@ -75,7 +75,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 254px; 
-  margin: 48px 40px 48px 40px;
+  margin: 48px 40px;
 }
 
 .card__title{
